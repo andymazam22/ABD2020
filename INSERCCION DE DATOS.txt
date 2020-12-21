@@ -77,6 +77,7 @@ select * from rutina
 delete from rutina
 
 
+/*INSERCION DE DATOS EN LA TABLA VENTA*/
 insert into venta values('1234','100','1373078712','1398765432','01/02/2019','PROTEINA O.O','49.99' );
 insert into venta values('1235','101','1872572134','1398765432','10/02/2019','PROTEINA O.O','49.99' );
 insert into venta values('1236','102','1301118712','1398765432','15/02/2019','PROTEINA O.O','59.99' );
@@ -95,3 +96,31 @@ insert into venta values('1248','104','1872572134','1398765432','08/02/2020','PR
 
 select * from venta
 
+
+/*INSERCION DE DATOS EN LA TABLA ASISTENCIA*/
+insert into asitencia values ('1','1301118712','2019-02-05');
+insert into asitencia values ('2','1341118712','2019-06-24');
+insert into asitencia values ('3','1308567712','2019-02-05');
+insert into asitencia values ('4','1301819712','2019-01-01');
+insert into asitencia values ('5','1111118712','2019-02-11');
+insert into asitencia values ('6','1376388712','2019-03-30');
+insert into asitencia values ('7','1373078712','2019-12-10');
+insert into asitencia values ('8','1301619724','2019-02-22');
+insert into asitencia values ('9','1300000712','2019-06-06');
+insert into asitencia values ('10','1872572134','2019-02-26');
+insert into asitencia values ('11','1301118712','"2020-02-05');
+insert into asitencia values ('12','1341118712','2020-06-24');
+insert into asitencia values ('13','1308567712','2020-02-05');
+insert into asitencia values ('14','1301819712','2020-01-01');
+insert into asitencia values ('15','1111118712','2020-02-11');
+insert into asitencia values ('16','1376388712','2020-03-30');
+insert into asitencia values ('17','1373078712','2020-12-10');
+insert into asitencia values ('18','1301619724','2020-02-22');
+insert into asitencia values ('19','1300000712','2020-06-06');
+insert into asitencia values ('20','1872572134','2020-02-26');
+insert into asitencia values ('21','1872572134','2020-03-26');
+insert into asitencia values ('22','1301118712','2019-02-05');
+insert into asitencia values ('23','1301118712','2019-02-05');
+insert into asitencia values ('24','1301118712','2019-02-05');
+
+select * from asistencia
