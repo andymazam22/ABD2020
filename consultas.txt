@@ -26,9 +26,10 @@ select
 	
 /*CANTIDAD DE RUTINAS DADAS POR CADA ENTRENADOR*/
 	select rutina.cedula_empleado,
-	sum (rutina.numero_rutina) as total_rutinas,
+	count (rutina.id_rutina) as total_rutinas,
 	empleado.nombres_empleado,
 	empleado.apellidos_empleado
 	from rutina
 	inner join empleado on empleado.cedula_empleado = rutina.cedula_empleado
 	group by rutina.cedula_empleado, empleado.nombres_empleado, empleado.apellidos_empleado;
+	
