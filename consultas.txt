@@ -17,7 +17,10 @@ select
 	group by cliente.nombres_cliente, cliente.apellidos_cliente order by total_aistencia desc
 
 
-/*TOP DE PERSONAS ENTRENADAS POR CADA ENTRENADOR*/ 
-
-/*CANTIDAD DE CLIENTES QUE ASISTEN AL GIMNASIO POR MES Y AÑO*/
+/*PRODUCTOS COMPRADOS POR CADA CLIENTE*/
+		select
+	cliente.nombres_cliente, cliente.apellidos_cliente, count (venta.id_venta)as productos_comprados
+	from cliente
+	inner join venta  on cliente.cedula_cliente  = venta.cedula_cliente
+	group by cliente.nombres_cliente, cliente.apellidos_cliente order by productos_comprados desc
 	
